@@ -9,8 +9,9 @@ public class AveragePositiveNumbers {
         double sum = 0;
         int count = 0;
 
+        System.out.println("Enter the positive numbers to calculate the average.");
         while (true) {
-            System.out.print("Enter the positive number to exit enter negative number: ");
+            System.out.print("Enter number: ");
             double num = scanner.nextDouble();
 
             if (num < 0) break;
