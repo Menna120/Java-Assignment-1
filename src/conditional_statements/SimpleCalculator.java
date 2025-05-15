@@ -17,6 +17,11 @@ public class SimpleCalculator {
 
         scanner.close();
 
+        if (num2 == 0 && operator.equals("/")) {
+            System.out.println("Cannot divide by zero.");
+            return;
+        }
+
         System.out.println(
                 num1 + " " + operator + " " + num2 + " = " +
                         switch (operator) {
